@@ -32,6 +32,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     	public void onServiceConnected(ComponentName name, IBinder service){
     		serviceEngine = ((ServiceEngine.MyBinder)service).getService();
     		isRecording = serviceEngine.isRecording;
+            txtRefreshInfo.setText("Data se každých " + serviceEngine.AGREGATION_STEP + " ms ukládají do souboru tresomer.csv");
     		if(isRecording == true){
                 serviceEngine.stopNotification();
             }
@@ -59,6 +60,7 @@ public class MainActivity extends Activity implements SensorEventListener {
     private TextView txtLiveY;
     private TextView txtLiveZ;
     private TextView txtGPS;
+    private TextView txtRefreshInfo;
 	private String tag = "Třesoměr aktivita";
 	private Time today = new Time(Time.getCurrentTimezone());
 	private boolean isRecording = false;
@@ -81,6 +83,7 @@ public class MainActivity extends Activity implements SensorEventListener {
         txtLiveY = (TextView)findViewById(R.id.txtLiveY);
         txtLiveZ = (TextView)findViewById(R.id.txtLiveZ);
         txtGPS = (TextView)findViewById(R.id.txtGPS);
+        txtRefreshInfo = (TextView)findViewById(R.id.txtRefreshInfo);
     }
     
 

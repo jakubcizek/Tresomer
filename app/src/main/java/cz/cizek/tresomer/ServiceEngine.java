@@ -55,7 +55,7 @@ public class ServiceEngine extends Service implements SensorEventListener {
     private LocationManager lm;
 	public static final String TRESOMER_AVERAGE_READY_ACTION = "cz.cizek.broadcaster.data_message";
     public static final String TRESOMER_GPS_READY_ACTION = "cz.cizek.broadcaster.gps_message";
-    private static final int AGREGATION_STEP = 100;
+    public static final int AGREGATION_STEP = 100;
 	private String tag = "Třesoměr služba";
 	private FileOutputStream fos = null;
 	private Time today = new Time(Time.getCurrentTimezone());

@@ -102,10 +102,10 @@
 
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtRefreshInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data se každých 500 ms ukládají do souboru tresomer.csv"
+        android:text="Data se každých ??? ms ukládají do souboru tresomer.csv"
         android:textSize="10dip" />
 
 </LinearLayout>
