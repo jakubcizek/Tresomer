@@ -1,7 +1,6 @@
 # AndroidStudio excludes
 .idea/
 *.iml
-.idea/vcs.xml
 
 # Gradle build excludes
 .gradle/
@@ -12,3 +11,4 @@ gradle.properties
 # Misc
 .DS_Store
 
+app/src/main/assets/
