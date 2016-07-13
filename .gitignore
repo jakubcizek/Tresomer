@@ -1,7 +1,6 @@
 # AndroidStudio excludes
 .idea/
 *.iml
-.idea/vcs.xml
 
 # Gradle build excludes
 .gradle/
