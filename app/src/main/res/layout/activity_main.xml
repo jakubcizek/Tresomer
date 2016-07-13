@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:text="Hledám GPS..."
+        android:layout_marginTop="20dip"
+        android:id="@+id/txtGPS" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+        android:id="@+id/txtLiveX"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="X: 0 m/s-2"
+        android:layout_marginTop="20dip"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/txtLiveY"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="Y: 0 m/s-2"
+            android:layout_marginTop="20dip"
+            android:textSize="14dip"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/txtLiveZ"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="Z: 0 m/s-2"
+            android:layout_marginTop="20dip"
+            android:textSize="14dip"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Počet měření:  0"
+        android:layout_marginTop="10dip"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Kumulovaná měření (X, Y, Z)"
+        android:textSize="20dip"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="0.49"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideOverlay" >
+
+
+        <TextView
+            android:id="@+id/txtTimerList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="11dip"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data se každých 500 ms ukládají do souboru tresomer.csv"
+        android:textSize="10dip" />
+
+</LinearLayout>

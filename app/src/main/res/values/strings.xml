@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Třesoměr</string>
+    <string name="menu_stop">Zastavit</string>
+    <string name="title_activity_main">Klobouk Třesoměr</string>
+    <string name="menu_start">Spustit</string>
+
+</resources>
